@@ -1,8 +1,10 @@
 # mkalarmimg - simple script to create Arch Linux ARM images
 
-## Requirements:
+Tested only on Arch Linux.
+Intended to invoke by `sudo`.
 
-* `binfmt-support` package
-* `qemu-user-static` package
+## Required packages
 
-
+* `binfmt-support` (AUR)
+* `qemu-user-static` (AUR)
+* `wget`

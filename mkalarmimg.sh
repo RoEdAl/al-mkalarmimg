@@ -309,7 +309,8 @@ if [[ ${SUDO_USER} ]]; then
 	runuser -m --user=${SUDO_USER} -- \
 		xz -Ccrc32 -T0 -qz6 ${IMGNAME}.tar
 else
-	bsdtar --no-xattrs --no-fflags --no-acls -Scf ${TARFILE} ${IMGFILE}
+	bsdtar --no-xattrs --no-fflags --no-acls -Scf ${IMGNAME}.tar ${IMGFILE}
+	xz -Ccrc32 -T0 -qz6 ${IMGNAME}.tar
 fi
 
 log_msg 'clean up'
