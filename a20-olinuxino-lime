@@ -1,0 +1,3 @@
+Arch='armv7h'
+LocalPkgs=('olinuxino-lime-dtbs' 'uboot-a20-olinuxino-lime-dto' 'sunxi-dt-overlays-toolkit' 'sun7i-a20-dt-overlays' 'sun7i-a20-dto-*')
+InstallPkgs=('uboot-a20-olinuxino-lime-dto' 'htop' 'iperf3' 'nmap')

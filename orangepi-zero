@@ -1,0 +1,3 @@
+Arch='armv7h'
+LocalPkgs=('orangepi-dtbs' 'uboot-orangepi-zero' 'sunxi-dt-overlays-toolkit' 'sun8i-h3-dt-overlays' 'sun8i-h3-dto-*' 'xradio-dkms')
+InstallPkgs=('uboot-orangepi-zero')

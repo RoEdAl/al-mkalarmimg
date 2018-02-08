@@ -1,0 +1,3 @@
+Arch='aarch64'
+LocalPkgs=('orangepi-dtbs' 'uboot-orangepi-zero-plus' 'sunxi-dt-overlays-toolkit' 'sun50i-h5-dt-overlays' 'sun50i-h5-dto-*' 'rtl8189fs-dkms')
+InstallPkgs=('uboot-orangepi-zero-plus' 'htop' 'iperf3' 'nmap')

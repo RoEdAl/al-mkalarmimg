@@ -1,0 +1,3 @@
+Arch='armv7h'
+LocalPkgs=('nanopi-dtbs' 'uboot-nanopi-neo' 'sunxi-dt-overlays-toolkit' 'sun8i-h3-dt-overlays' 'sun8i-h3-dto-*')
+InstallPkgs=('uboot-nanopi-neo' 'htop' 'iperf3' 'nmap')
