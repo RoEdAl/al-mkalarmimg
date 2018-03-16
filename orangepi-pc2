@@ -1,0 +1,4 @@
+Arch='aarch64'
+LocalPkgs=('orangepi-dtbs' 'uboot-orangepi-pc2' 'sunxi-dt-overlays-toolkit' 'sun50i-h5-dt-overlays' 'sun50i-h5-dto-*')
+LocalPkgsAnyArch=('usb-gadget' 'usb-gadget-dhcp-server' 'usb-gadget-dhcp-client')
+InstallPkgs=('uboot-orangepi-pc2' 'htop' 'iperf3' 'nmap')

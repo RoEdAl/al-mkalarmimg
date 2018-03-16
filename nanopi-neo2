@@ -1,4 +1,5 @@
 Arch='aarch64'
 KernelRc=0
 LocalPkgs=('nanopi-dtbs' 'uboot-nanopi-neo2' 'sunxi-dt-overlays-toolkit' 'sun50i-h5-dt-overlays' 'sun50i-h5-dto-*')
+LocalPkgsAnyArch=('usb-gadget' 'usb-gadget-dhcp-server' 'usb-gadget-dhcp-client')
 InstallPkgs=('uboot-nanopi-neo2' 'htop' 'iperf3')

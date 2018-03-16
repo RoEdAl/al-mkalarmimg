@@ -1,3 +1,4 @@
 Arch='armv7h'
 LocalPkgs=('olinuxino-lime-dtbs' 'uboot-a10-olinuxino-lime-dto' 'sunxi-dt-overlays-toolkit' 'sun4i-a10-dt-overlays' 'sun4i-a10-dto-*')
+LocalPkgsAnyArch=('usb-gadget' 'usb-gadget-dhcp-server' 'usb-gadget-dhcp-client')
 InstallPkgs=('uboot-a10-olinuxino-lime-dto' 'htop' 'iperf3' 'nmap')

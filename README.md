@@ -23,3 +23,7 @@ creates `alarm-a10-olinuxino-lime-XXXXXXXXXXXX.img.tar.xz` file.
 
 * `-s` - image size (1536M by default)
 * `-p` - directory with additional packages
+
+## Saving image to SD card:
+
+`tar -xOf <imgname>.img.tar.xz | sudo dd of=/dev/sdX bs=4k status=noxfer`

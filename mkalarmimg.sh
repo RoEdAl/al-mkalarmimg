@@ -1,8 +1,8 @@
 #!/bin/bash -e
 
-declare -r APPTITLE=mkalarmimg
+declare -r APPTITLE="${0##*/}"
 
-declare PKGDIR='/home/builder/mkpkg/pkg'
+declare PKGDIR='/home/builder/makepkg/pkg'
 declare IMGSIZE=1536M
 declare CFNAME
 declare DOWNLOAD_APKG=0
@@ -34,10 +34,18 @@ function find_pkg {
   ls -v ${1}-*-*-${Arch}.pkg.*
 }
 
+function find_pkg_anyarch {
+  ls -v ${1}-*-*-any.pkg.*
+}
+
 function find_pkgs() {
   local -a PKGS
   for PKG in "${LocalPkgs[@]}"; do
     PKGS+=( $(cd "${PKGDIR}"; find_pkg "${PKG}") )
+  done
+
+  for PKG in "${LocalPkgsAnyArch[@]}"; do
+    PKGS+=( $(cd "${PKGDIR}"; find_pkg_anyarch "${PKG}") )
   done
 
   echo "${PKGS[@]}"
@@ -113,10 +121,13 @@ SigLevel=Optional
 EOF
 	) >> ${EXCHANGE_DIR}/custom-repo.txt
 
-	(cat <<'EOF'
+	(cat <<EOF
 #!/bin/bash -e
-declare -r APPTITLE=mkalarmimg
 
+declare -r APPTITLE=${0##*/}
+
+EOF
+	cat <<'EOF'
 function log_msg {
     logger -s -t v-${APPTITLE} "$@"
 }

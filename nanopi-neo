@@ -1,3 +1,4 @@
 Arch='armv7h'
 LocalPkgs=('nanopi-dtbs' 'uboot-nanopi-neo' 'sunxi-dt-overlays-toolkit' 'sun8i-h3-dt-overlays' 'sun8i-h3-dto-*')
+LocalPkgsAnyArch=('usb-gadget' 'usb-gadget-dhcp-server' 'usb-gadget-dhcp-client')
 InstallPkgs=('uboot-nanopi-neo' 'htop' 'iperf3' 'nmap')
